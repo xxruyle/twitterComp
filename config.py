@@ -1,0 +1,5 @@
+API_KEY = ""
+API_KEY_SECRET = ""
+BEARER_TOKEN = ""
+CLIENT_ID = ""
+CLIENT_SECRET = ""
