@@ -1,13 +1,11 @@
 import tweepy 
-import config 
+import twitterComp.config as config 
 
 class Compile: 
     def __init__(self, users, bearer_token): 
         self.users = users 
         self.bearer_token = bearer_token
         self.userdic = {}
-        self.user_list = []
-        self.id_list = []
         self.client = self.init_client() 
 
     def init_client(self): 
@@ -35,10 +33,6 @@ class Compile:
 
 
         
-
-
-c1 = Compile("users.txt", config.BEARER_TOKEN)
-print(c1.show_tweets())
 
 
 
