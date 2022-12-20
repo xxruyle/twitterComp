@@ -1,11 +1,11 @@
-import tweepy 
-import config 
+import twitterComp 
+import argparse 
 
 def main(): 
-    client = tweepy.Client(bearer_token=config.BEARER_TOKEN) 
-    #print(client.get_users_tweets("1093317430745726977"))
-    test = list(client.get_user(username="ArrowheadLive"))
-    print(test[0].id)
+    c1 = twitterComp.Compile("users.txt", twitterComp.BEARER_TOKEN)
+    c1.show_tweets()
 
 if __name__ == "__main__": 
+    parser = argparse.ArgumentParser(description = "Show a user specificed twitter timeline")
+    args = parser.parse_args()
     main()

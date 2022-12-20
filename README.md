@@ -9,8 +9,13 @@ otherhandle
 anothercoolhandlename
 ```
 
-2) initialize a Compile instance and use your twitter bearer token
+2) Initialize a Compile instance and use your twitter bearer token
 ```python
-compileExampele = Compile("userlist.txt", bearer_token)
+compileExample = Compile("userlist.txt", bearer_token)
+```
+
+3) Use the different Compile methods 
+```python
+compileExample.show_tweets()
 ```
 
